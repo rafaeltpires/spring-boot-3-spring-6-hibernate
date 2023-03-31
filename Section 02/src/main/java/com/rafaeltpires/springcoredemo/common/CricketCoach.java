@@ -1,4 +1,4 @@
-package com.rafaeltpires.util;
+package com.rafaeltpires.springcoredemo.common;
 
 import org.springframework.stereotype.Component;
 
