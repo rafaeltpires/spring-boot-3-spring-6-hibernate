@@ -1,5 +1,6 @@
-package com.rafaeltpires.springcoredemo;
+package com.rafaeltpires.springcoredemo.rest;
 
+import com.rafaeltpires.util.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
