@@ -11,9 +11,15 @@ public class DemoController {
     // define a private field for the dependecy
     private Coach myCoach;
 
-    // define a constructor for dependency injection
+    /* NOTE: Define a constructor for dependency injection
     @Autowired
     public DemoController(Coach theCoach) {
+        myCoach = theCoach;
+    }*/
+
+    // Setter Injection ( can use any method name )
+    @Autowired
+    public void setMyCoach (Coach theCoach) {
         myCoach = theCoach;
     }
 
