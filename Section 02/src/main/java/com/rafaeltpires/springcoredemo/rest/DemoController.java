@@ -2,6 +2,7 @@ package com.rafaeltpires.springcoredemo.rest;
 
 import com.rafaeltpires.springcoredemo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,7 +20,7 @@ public class DemoController {
 
     // Setter Injection ( can use any method name )
     @Autowired
-    public void setMyCoach (Coach theCoach) {
+    public void setMyCoach (@Qualifier("cricketCoach") Coach theCoach) {
         myCoach = theCoach;
     }
 
