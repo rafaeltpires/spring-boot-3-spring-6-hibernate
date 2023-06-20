@@ -19,8 +19,16 @@ public class DemoController {
     }*/
 
     // Setter Injection ( can use any method name )
+
+    // USING A QUALIFIER
+    //
+    //     @Autowired
+    //    public void setMyCoach (@Qualifier("cricketCoach") Coach theCoach) {
+    //        myCoach = theCoach;
+    //    }
+
     @Autowired
-    public void setMyCoach (@Qualifier("cricketCoach") Coach theCoach) {
+    public void setMyCoach ( Coach theCoach) {
         myCoach = theCoach;
     }
 
